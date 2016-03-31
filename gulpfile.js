@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
   uglify = require('gulp-uglify'),
-    sass = require('gulp-ruby-sass');
+    sass = require('gulp-sass');
 
 // Uglifies JS
 gulp.task('scripts', function(){
@@ -10,17 +10,18 @@ gulp.task('scripts', function(){
 });
 
 // Compile SASS Task
-gulp.task('styles', function(){
+gulp.task('sass', function(){
   gulp.src('SCSS/*.scss')
-  .pipe(sass())
+  .pipe(sass()
+  .on('error', sass.logError))
   .pipe(gulp.dest('CSS/'));
 });
 
 // Watches JS and SASS
 gulp.task('watch', function(){
     gulp.watch('JS/*.js', ['scripts']);
-    gulp.watch('SCSS/*.scss', ['styles']);
+    gulp.watch('SCSS/*.scss', ['sass']);
 });
 
 // Default Gulp action
-gulp.task('default', ['scripts', 'styles', 'watch']);
+gulp.task('default', ['scripts', 'sass', 'watch']);
