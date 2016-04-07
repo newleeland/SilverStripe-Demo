@@ -10,7 +10,7 @@ autoprefixer = require('gulp-autoprefixer');
 gulp.task('scripts', function(){
   gulp.src('JS/*.js')
   .pipe(concat('build.js'))
-  .pipe(gulp.dest('JS'))
+  .pipe(gulp.dest('JS/'))
   .pipe(rename('build.min.js'))
   .pipe(uglify())
   .pipe(gulp.dest('JS/'));

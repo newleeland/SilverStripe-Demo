@@ -1,8 +1,10 @@
 //Typography
-    .h1, .h2, .h3, .h4, p: font-family: 'Open Sans', sans-serif;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
     //font-weight
     $light:300;
     $regular:400;
     $bold:700;
 
     //font-size
+
+//H1
