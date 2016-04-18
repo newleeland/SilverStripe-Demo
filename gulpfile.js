@@ -18,7 +18,7 @@ gulp.task('scripts', function(){
 
 // Compile SASS Task
 gulp.task('sass', function(){
-  gulp.src('SCSS/*.scss')
+  gulp.src('SCSS/**/*.scss')
   .pipe(sourcemaps.init())
   .pipe(sass().on('error', sass.logError))
   .pipe(sourcemaps.write())
@@ -29,8 +29,8 @@ gulp.task('sass', function(){
 // Watches JS and SASS
 gulp.task('watch', function(){
     gulp.watch('JS/*.js', ['scripts']);
-    gulp.watch('SCSS/*.scss', ['sass']);
+    gulp.watch('SCSS/**/*.scss', ['sass']);
 });
 
 // Default Gulp action
-gulp.task('default', ['scripts', 'sass', 'watch']);
+gulp.task('default', ['scripts', 'sass']);
