@@ -15,38 +15,43 @@
 
     <body>
         <!-- CMS Login start -->
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Welcome ot the demo</h2>
+        <section class="login-bar">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Welcome to the demo</h2>
+                </div>
+                <div class="col-md-6">
+                    <section class="login-form">
+                        <p>Press login to enter CMS</p>
+                        <form class="form-holder">
+                            <fieldset>
+                                <div class="form-item">
+                                    <label for="">Email address</label>
+                                    <input type="text" name="name" placeholder="Email address" value="">
+                                </div>
+                                <div class="form-item">
+                                    <label for="">Password</label>
+                                    <input type="text" name="name" placeholder="Password" value="">
+                                </div>
+                            </fieldset>
+                            <button type="submit" name="button">Login</button>
+                            <select name="">
+                                <option value="en" selected>EN – English</option>
+                                <option value="de">DE – Deutsche</option>
+                                <option value="es">ES – Español</option>
+                                <option value="fr">FR – Français</option>
+                                <option value="mi">MI – Māori</option>
+                                <option value="ru">RU – русский</option>
+                                <option value="ar">AR – العربية</option>
+                                <option value="zh">ZH – 中文</option>
+                                <option value="ja">JA – 日本語</option>
+                            </select>
+                        </form>
+                    </section>
+                </div>
             </div>
-            <div class="col-md-6">
-                <h4>Press login to enter CMS</h4>
-                <fieldset>
-                    <div class="form-item">
-                        <label for="">Email address</label>
-                        <input type="text" name="name" value="">
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div class="form-item">
-                        <label for="">Password</label>
-                        <input type="text" name="name" value="">
-                    </div>
-                </fieldset>
-                <button type="submit" name="button">Login</button>
-                <select class="" name="">
-                    <option value="en" selected>English</option>
-                    <option value="de">Deutsche</option>
-                    <option value="es">Español</option>
-                    <option value="fr">Français</option>
-                    <option value="tm">Māori</option>
-                    <option value="ru">русский</option>
-                    <option value="mi">العربية</option>
-                    <option value="zh">中文</option>
-                    <option value="ja">日本語</option>
-                </select>
-            </div>
-        </div>
+        </section>
+
         <!-- CMS Login end -->
 
 

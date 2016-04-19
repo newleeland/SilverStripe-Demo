@@ -8,7 +8,7 @@ autoprefixer = require('gulp-autoprefixer');
 
 // Uglifies JS
 gulp.task('scripts', function(){
-  gulp.src('js/*.js')
+  gulp.src('js/**/*.js')
   .pipe(concat('build.js'))
   .pipe(gulp.dest('js/'))
   .pipe(rename('build.min.js'))
@@ -28,7 +28,7 @@ gulp.task('sass', function(){
 
 // Watches JS and SASS
 gulp.task('watch', function(){
-    gulp.watch('js/*.js', ['scripts']);
+    gulp.watch('js/**/*.js', ['scripts']);
     gulp.watch('scss/**/*.scss', ['sass']);
 });
 

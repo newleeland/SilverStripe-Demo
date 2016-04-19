@@ -1,0 +1,66 @@
+.login-bar {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: $bg-color-brand-dark;
+    z-index: 100;
+    color: $color-brand;
+    .row {
+        max-width: 1020px;
+        margin: 0 auto;
+        padding: 0 15px;
+        h2 {
+            padding-top: 32px;
+            font-weight: $regular;
+        }
+    }
+}
+.login-form {
+    float: right;
+    p {
+        margin: 16px 0 7px 0;
+        font-size: 14px;
+
+    }
+}
+
+.form-holder {
+    button {
+        background-color: transparent;
+        border: 2px solid $brand-color-highlight;
+        color: $brand-color-highlight;
+        border-radius: 23px;
+        padding: 3px 15px;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    select {
+        background-color: transparent;
+        text-transform: uppercase;
+        font-weight: $bold;
+        width: 50px;
+        border: 0;
+
+    }
+}
+fieldset {
+    display: inline-block;
+    .form-item {
+        display: inline-block;
+        label {
+            display: none;
+        }
+        input {
+            background: rgba(white, 0.2);
+            width: 130px;
+            height: 33px;
+            margin: 0 5px 0 0;
+            font-size: 12px;
+            padding: 0 15px;
+            border: 0;
+            border-radius: 5px;
+        }
+    }
+}

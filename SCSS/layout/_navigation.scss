@@ -1,7 +1,7 @@
 nav{
   height: 80px; // media query 768px
   position: fixed;
-  top: 0;
+  top: 100px;
   transition: border-color 200ms ease-in-out,transform 0.3s cubic-bezier(0.35, -0.25, 0.35, 0);
   background-color: $bg-color-light;
   width: 100%;
