@@ -1,9 +1,10 @@
 header.hero{
-  background-color: $bg-color-highlight;
-  color: $color-highlight;
-  text-align: left;
-  min-height: 300px; //content placeholder
-  section{
+    background-color: $bg-color-highlight;
+    color: $color-highlight;
+    text-align: left;
+    padding-top: 77px;
+    min-height: 300px; //content placeholder
+    .hero-cta{
 
-  }
+    }
 }
