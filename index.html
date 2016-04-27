@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en=US">
+<html lang="en">
     <head>
         <title>SilverStripe Demo</title>
-        <meta>
-        <meta name="Jared Lee" content="SilverStripe Demo Site">
+        <meta charset="utf-8">
+        <title>SilverStripe Demo Site</title>
+        <meta name="author" content="Jared Lee">
+        <meta name="description" content="SilverStripe Demo">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" type="text/css" href="CSS/main.css">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" integrity="sha384-HIq10PGaFnYl5SaZKAWej6ppW5+ww1BD8PQ8JKkgMybhae9J2EqkxepdU36KMOFx" crossorigin="anonymous">
-        <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js" integrity="sha384-8mpDLwonQZmbe+NSxlfP47bSD45JOenYvLLJIsxcV6t08mn9aapHSBlcjTlSv+rS" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:600,300,700' rel='stylesheet' type='text/css'>
+        <script src="js/build/build.js"></script>
     </head>
 
 
@@ -16,38 +17,40 @@
     <body>
         <!-- CMS Login start -->
         <section class="login-bar">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Welcome to the demo</h2>
-                </div>
-                <div class="col-md-6">
-                    <section class="login-form">
-                        <p>Press login to enter CMS</p>
-                        <form class="form-holder">
-                            <fieldset>
-                                <div class="form-item">
-                                    <label for="">Email address</label>
-                                    <input type="text" name="name" placeholder="Email address" value="">
-                                </div>
-                                <div class="form-item">
-                                    <label for="">Password</label>
-                                    <input type="text" name="name" placeholder="Password" value="">
-                                </div>
-                            </fieldset>
-                            <button type="submit" name="button">Login</button>
-                            <select name="">
-                                <option value="en" selected>EN – English</option>
-                                <option value="de">DE – Deutsche</option>
-                                <option value="es">ES – Español</option>
-                                <option value="fr">FR – Français</option>
-                                <option value="mi">MI – Māori</option>
-                                <option value="ru">RU – русский</option>
-                                <option value="ar">AR – العربية</option>
-                                <option value="zh">ZH – 中文</option>
-                                <option value="ja">JA – 日本語</option>
-                            </select>
-                        </form>
-                    </section>
+            <div class="container">
+                <div class="row">
+                    <div class="six columns">
+                        <h2>Welcome to the demo</h2>
+                    </div>
+                    <div class="six columns">
+                        <section class="login-form">
+                            <p>Press login to enter CMS</p>
+                            <form class="form-holder">
+                                <fieldset>
+                                    <div class="form-item">
+                                        <label for="">Email address</label>
+                                        <input type="text" name="name" placeholder="Email address" value="">
+                                    </div>
+                                    <div class="form-item">
+                                        <label for="">Password</label>
+                                        <input type="text" name="name" placeholder="Password" value="">
+                                    </div>
+                                </fieldset>
+                                <button type="submit" name="button">Login</button>
+                                <select name="">
+                                    <option value="en" selected>EN – English</option>
+                                    <option value="de">DE – Deutsche</option>
+                                    <option value="es">ES – Español</option>
+                                    <option value="fr">FR – Français</option>
+                                    <option value="mi">MI – Māori</option>
+                                    <option value="ru">RU – русский</option>
+                                    <option value="ar">AR – العربية</option>
+                                    <option value="zh">ZH – 中文</option>
+                                    <option value="ja">JA – 日本語</option>
+                                </select>
+                            </form>
+                        </section>
+                    </div>
                 </div>
             </div>
         </section>
@@ -57,59 +60,48 @@
 
 
         <nav>
+            <!-- inline SVG logo here -->
             <section>
-                <!-- inline SVG logo here -->
-                <a href="http://demo.silverstripe.org" class="logo">
-                    <svg version="1.1" class="brand-logo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                    	 viewBox="0 0 75 75" enable-background="new 0 0 75 75" xml:space="preserve">
-                    <circle fill="#5A6A8E" cx="37.5" cy="37.5" r="37.5px"/>
-                    </svg>
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    	 viewBox="0 0 135 30" enable-background="new 0 0 135 30" xml:space="preserve">
-                    <g id="XMLID_158_">
-                    	<path fill="#1A364C" d="M4.4,13.6l2.1-4.1h2.3l-3.3,6.1v3.9H3.3v-3.8L0,9.5h2.3L4.4,13.6z"/>
-                    	<path fill="#1A364C" d="M20.5,14.5c0,1.7-0.4,2.9-1.2,3.8c-0.8,0.9-2,1.3-3.5,1.3s-2.7-0.4-3.5-1.3c-0.8-0.9-1.2-2.2-1.2-3.8
-                    		s0.4-2.9,1.2-3.8c0.8-0.9,2-1.3,3.5-1.3s2.7,0.4,3.5,1.3C20.1,11.5,20.5,12.8,20.5,14.5z M13.2,14.5c0,1.1,0.2,2,0.6,2.5
-                    		c0.4,0.6,1.1,0.8,1.9,0.8c1.7,0,2.5-1.1,2.5-3.4c0-2.3-0.8-3.4-2.5-3.4c-0.8,0-1.5,0.3-1.9,0.9C13.4,12.5,13.2,13.4,13.2,14.5z"/>
-                    	<path fill="#1A364C" d="M32.1,9.5V16c0,0.7-0.2,1.4-0.5,1.9c-0.3,0.6-0.8,1-1.4,1.3c-0.6,0.3-1.4,0.4-2.2,0.4c-1.3,0-2.3-0.3-3-1
-                    		c-0.7-0.7-1.1-1.6-1.1-2.7V9.5H26v6.1c0,0.8,0.2,1.3,0.5,1.7c0.3,0.4,0.8,0.5,1.5,0.5c0.7,0,1.2-0.2,1.5-0.5s0.5-0.9,0.5-1.7V9.5
-                    		H32.1z"/>
-                    	<path fill="#1A364C" d="M38.1,15.6v3.8H36v-10h2.9c1.4,0,2.4,0.2,3,0.7c0.7,0.5,1,1.2,1,2.3c0,0.6-0.2,1.1-0.5,1.6
-                    		c-0.3,0.5-0.8,0.8-1.4,1.1c1.5,2.3,2.5,3.7,2.9,4.4h-2.4l-2.4-3.8H38.1z M38.1,13.9h0.7c0.7,0,1.2-0.1,1.5-0.3
-                    		c0.3-0.2,0.5-0.6,0.5-1.1c0-0.5-0.2-0.8-0.5-1c-0.3-0.2-0.8-0.3-1.5-0.3h-0.6V13.9z"/>
-                    	<path fill="#1A364C" d="M57.6,16.7c0,0.9-0.3,1.6-1,2.1c-0.7,0.5-1.6,0.8-2.7,0.8c-1.1,0-2-0.2-2.8-0.6v-2c0.7,0.3,1.2,0.5,1.7,0.6
-                    		c0.5,0.1,0.9,0.2,1.3,0.2c0.5,0,0.8-0.1,1.1-0.3c0.2-0.2,0.4-0.4,0.4-0.8c0-0.2-0.1-0.4-0.2-0.5c-0.1-0.2-0.3-0.3-0.5-0.4
-                    		c-0.2-0.1-0.6-0.4-1.3-0.7c-0.6-0.3-1.1-0.6-1.4-0.8c-0.3-0.3-0.6-0.6-0.7-0.9c-0.2-0.4-0.3-0.8-0.3-1.2c0-0.9,0.3-1.6,0.9-2.1
-                    		c0.6-0.5,1.4-0.8,2.5-0.8c0.5,0,1,0.1,1.5,0.2c0.5,0.1,1,0.3,1.5,0.5l-0.7,1.7c-0.5-0.2-1-0.4-1.3-0.5c-0.3-0.1-0.7-0.1-1-0.1
-                    		c-0.4,0-0.7,0.1-0.9,0.3c-0.2,0.2-0.3,0.4-0.3,0.7c0,0.2,0,0.4,0.1,0.5c0.1,0.1,0.2,0.3,0.4,0.4c0.2,0.1,0.6,0.4,1.3,0.7
-                    		c0.9,0.4,1.6,0.9,1.9,1.3C57.4,15.5,57.6,16.1,57.6,16.7z"/>
-                    	<path fill="#1A364C" d="M60.8,19.5v-10H63v10H60.8z"/>
-                    	<path fill="#1A364C" d="M70.7,19.5h-2.1v-8.2h-2.7V9.5h7.6v1.8h-2.7V19.5z"/>
-                    	<path fill="#1A364C" d="M82.2,19.5h-5.8v-10h5.8v1.7h-3.6v2.2h3.4v1.7h-3.4v2.6h3.6V19.5z"/>
-                    	<path fill="#1A364C" d="M99.6,19.5h-2.7l-4.4-7.6h-0.1c0.1,1.3,0.1,2.3,0.1,2.9v4.7h-1.9v-10h2.7l4.3,7.5h0
-                    		c-0.1-1.3-0.1-2.2-0.1-2.8V9.5h1.9V19.5z"/>
-                    	<path fill="#1A364C" d="M109.7,19.5l-0.7-2.4h-3.7l-0.7,2.4h-2.3l3.5-10.1h2.6l3.5,10.1H109.7z M108.4,15.3c-0.7-2.2-1-3.4-1.1-3.7
-                    		c-0.1-0.3-0.1-0.5-0.2-0.7c-0.2,0.6-0.6,2-1.3,4.3H108.4z"/>
-                    	<path fill="#1A364C" d="M118.8,19.5l-2.4-7.9h-0.1c0.1,1.6,0.1,2.7,0.1,3.2v4.7h-1.9v-10h2.9l2.4,7.7h0l2.5-7.7h2.9v10h-2v-4.7
-                    		c0-0.2,0-0.5,0-0.8c0-0.3,0-1.1,0.1-2.3h-0.1l-2.6,7.8H118.8z"/>
-                    	<path fill="#1A364C" d="M135,19.5h-5.8v-10h5.8v1.7h-3.6v2.2h3.4v1.7h-3.4v2.6h3.6V19.5z"/>
-                    </g>
+                <a href="http://demo.silverstripe.org" class="brand">
+                    <svg version="1.1" class="logo" x="0px" y="0px" viewBox="-732 386 135 30" enable-background="new -732 386 135 30" xml:space="preserve">
+                    <path class="logo-icon" fill="#5A6A8E" d="M-706.2,393.2l-12.2-7c-0.3-0.2-0.6-0.2-0.9,0l-12.2,7c-0.3,0.2-0.5,0.5-0.5,0.8V408c0,0.3,0.2,0.6,0.5,0.8
+                    	l12.2,7c0.1,0.1,0.3,0.1,0.5,0.1s0.3,0,0.5-0.1l12.2-7c0.3-0.2,0.5-0.5,0.5-0.8V394C-705.8,393.6-705.9,393.3-706.2,393.2z
+                    	 M-718.9,388l10.3,5.9l-10.3,5.9l-10.3-5.9L-718.9,388z M-730.1,395.6l10.3,5.9v11.9l-10.3-5.9V395.6z M-707.6,407.5l-10.3,5.9
+                    	v-11.9l10.3-5.9V407.5z"/>
+                    <path class="logo-type" fill="#5A6A8E" d="M-691.9,406.1v-10.2h2.2v8.4h4.1v1.8H-691.9z M-671.7,401c0,1.7-0.4,3-1.3,3.9c-0.8,0.9-2,1.4-3.6,1.4
+                    	c-1.6,0-2.8-0.5-3.6-1.4c-0.8-0.9-1.3-2.2-1.3-3.9c0-1.7,0.4-3,1.3-3.9c0.8-0.9,2-1.3,3.6-1.3s2.8,0.5,3.6,1.4
+                    	C-672.1,398-671.7,399.3-671.7,401z M-679.1,401c0,1.1,0.2,2,0.6,2.6c0.4,0.6,1.1,0.9,1.9,0.9c1.7,0,2.6-1.1,2.6-3.4
+                    	c0-2.3-0.9-3.5-2.6-3.5c-0.9,0-1.5,0.3-1.9,0.9C-678.9,399-679.1,399.9-679.1,401z M-662.7,400.4h4.1v5.3c-0.7,0.2-1.3,0.4-1.9,0.5
+                    	c-0.6,0.1-1.2,0.1-1.8,0.1c-1.5,0-2.7-0.5-3.5-1.4c-0.8-0.9-1.2-2.2-1.2-3.9c0-1.6,0.5-2.9,1.4-3.9c0.9-0.9,2.3-1.4,3.9-1.4
+                    	c1,0,2.1,0.2,3,0.6l-0.7,1.7c-0.7-0.4-1.5-0.6-2.3-0.6c-0.9,0-1.7,0.3-2.2,0.9s-0.8,1.5-0.8,2.5c0,1.1,0.2,2,0.7,2.5
+                    	c0.5,0.6,1.1,0.9,2,0.9c0.5,0,0.9,0,1.4-0.1v-2.1h-1.9V400.4z M-644,401c0,1.7-0.4,3-1.3,3.9c-0.8,0.9-2,1.4-3.6,1.4
+                    	c-1.6,0-2.8-0.5-3.6-1.4c-0.8-0.9-1.3-2.2-1.3-3.9c0-1.7,0.4-3,1.3-3.9c0.8-0.9,2-1.3,3.6-1.3s2.8,0.5,3.6,1.4
+                    	C-644.4,398-644,399.3-644,401z M-651.4,401c0,1.1,0.2,2,0.6,2.6c0.4,0.6,1.1,0.9,1.9,0.9c1.7,0,2.6-1.1,2.6-3.4
+                    	c0-2.3-0.9-3.5-2.6-3.5c-0.9,0-1.5,0.3-1.9,0.9C-651.2,399-651.4,399.9-651.4,401z M-634.9,406.1h-2.2v-8.4h-2.8v-1.8h7.7v1.8h-2.8
+                    	V406.1z M-623.7,400.1l2.1-4.2h2.3l-3.4,6.2v4h-2.2v-3.9l-3.4-6.3h2.3L-623.7,400.1z M-607.7,399.1c0,1.1-0.3,1.9-1,2.5
+                    	c-0.7,0.6-1.7,0.9-2.9,0.9h-0.9v3.6h-2.2v-10.2h3.3c1.2,0,2.2,0.3,2.8,0.8C-608,397.2-607.7,398-607.7,399.1z M-612.6,400.7h0.7
+                    	c0.7,0,1.2-0.1,1.5-0.4c0.3-0.3,0.5-0.6,0.5-1.1c0-0.5-0.1-0.9-0.4-1.1c-0.3-0.2-0.7-0.4-1.3-0.4h-1V400.7z M-597,406.1h-5.9v-10.2
+                    	h5.9v1.8h-3.7v2.2h3.5v1.8h-3.5v2.6h3.7V406.1z"/>
                     </svg>
                 </a>
                 <!-- inline SVG logo end -->
-                <div class="mobile-nav">
-                    <a class="mobile-menu-btn" href="#">
-                        <span class="menu">
+                <div class="mobile-menu">
+                    <a id="buttonShowMenu" class="mobile-menu-btn" href="#">
+                        <span class="pancakes">
                         </span>
                     </a>
 
                 </div>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#"></a>Home</li>
-                    <li class="nav-item"><a href="#"></a>Features</li>
-                    <li class="nav-item"><a href="#"></a>About</li>
-                    <li class="nav-item"><a href="#"></a>Getting Started</li>
-                </ul>
+
+                <div id="menuSlideOut" class="main-nav hide-right">
+                    <h3>Menu</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Getting Started</a></li>
+                    </ul>
+                </div>
             </section>
         </nav>
 
@@ -226,5 +218,23 @@
                 </div>
             </div>
         </footer>
+
+
+
+
+        <!-- Mobile navigation panel script -->
+        <script src="js/classie.js"></script>
+		<script>
+			var pancakes = document.getElementById( 'buttonShowMenu' ),
+                menu = document.getElementById( 'menuSlideOut' ),
+				body = document.body;
+
+			pancakes.onclick = function() {
+				classie.toggle( body, 'hide-left' );
+				classie.toggle( menu, 'show-right' );
+			};
+
+		</script>
+        <!-- Mobile navigation panel script ends -->
     </body>
 </html>

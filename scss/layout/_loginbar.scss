@@ -1,37 +1,42 @@
 .login-bar {
-    height: 100px;
+    height: 70px;
     width: 100%;
-    position: fixed;
+    position: relative;
     top: 0;
-    background-color: $bg-color-brand-dark;
+    background-color: $brand-bg-color-dark;
     z-index: 100;
     color: $color-brand;
     .row {
         max-width: 1020px;
         margin: 0 auto;
-        padding: 0 15px;
         h2 {
-            padding-top: 32px;
-            font-weight: $regular;
+            display: none;
         }
     }
 }
 .login-form {
-    float: right;
+    line-height: 65px;
     p {
-        margin: 16px 0 7px 0;
+        display: inline-block;
         font-size: 14px;
-
+        line-height: normal;
+        margin: auto;
+        vertical-align: middle;
+        width: 50%;
     }
 }
 
 .form-holder {
+    display: inline-block;
+    float: right;
+    margin-bottom: 0;
+    vertical-align: top;
     button {
-        background-color: transparent;
-        border: 2px solid $brand-color-highlight;
-        color: $brand-color-highlight;
+        background-color: $brand-color-highlight;
+        border: 0;
+        color: $bg-color-dark;
         border-radius: 23px;
-        padding: 3px 15px;
+        padding: 0 15px;
         font-size: 14px;
         text-transform: uppercase;
         font-weight: 700;
@@ -40,13 +45,14 @@
         background-color: transparent;
         text-transform: uppercase;
         font-weight: $bold;
-        width: 50px;
+        width: 45px;
         border: 0;
 
     }
 }
 fieldset {
-    display: inline-block;
+    display: none;
+    margin-bottom: 0;
     .form-item {
         display: inline-block;
         label {
@@ -55,7 +61,7 @@ fieldset {
         input {
             background: rgba(white, 0.2);
             width: 130px;
-            height: 33px;
+            height: 38px;
             margin: 0 5px 0 0;
             font-size: 12px;
             padding: 0 15px;
@@ -64,3 +70,61 @@ fieldset {
         }
     }
 }
+
+
+/* Mobile first queries */
+
+    /* Larger than phablet */
+    @media (min-width: 550px) {
+        .login-bar{
+            .container{
+                width: 100%;
+            }
+            .six.columns{
+                width: 92%;
+                // margin-left: 0;
+            }
+        }
+    }
+
+    /* Larger than tablet */
+    @media (min-width: 750px) {
+        .login-form {
+            p {width: 30%;}
+        }
+        fieldset {
+            display: inline-block;
+        }
+    }
+
+    /* Larger than desktop */
+    @media (min-width: 1000px) {
+        .login-bar {
+            height: 100px;
+            position: fixed;
+            .row{
+                h2 {
+                    display: inline-block;
+                    margin-top: 24px;
+                }
+                .six.columns{
+                    width: 48%;
+                }
+            }
+        }
+        .login-form {
+            line-height: inherit;
+            float: right;
+            p {
+                display: block;
+                line-height: inherit;
+                margin: 16px 0 7px 0;
+                vertical-align: inherit;;
+                width: 50%;
+            }
+        }
+        .container{
+            width: 100%;
+        }
+
+    }

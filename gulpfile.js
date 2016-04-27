@@ -8,12 +8,12 @@ autoprefixer = require('gulp-autoprefixer');
 
 // Uglifies JS
 gulp.task('scripts', function(){
-  gulp.src('js/**/*.js')
+  gulp.src('js/*.js')
   .pipe(concat('build.js'))
-  .pipe(gulp.dest('js/'))
-  .pipe(rename('build.min.js'))
-  .pipe(uglify())
-  .pipe(gulp.dest('js/'));
+  .pipe(gulp.dest('js/build/'));
+  // .pipe(rename('build.min.js'))
+  // .pipe(uglify())
+  // .pipe(gulp.dest('js/'));
 });
 
 // Compile SASS Task

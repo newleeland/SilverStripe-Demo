@@ -1,7 +1,13 @@
+
+
 // Base
 @import "base/normalize";
 @import "base/typography";
 
+
+// Vendors
+    //Skeleton
+    @import "vendors/skeleton";
 // Components
 
 // utils
@@ -22,5 +28,3 @@
 @import "pages/getstarted";
 
 // Themes
-
-// Vendors
