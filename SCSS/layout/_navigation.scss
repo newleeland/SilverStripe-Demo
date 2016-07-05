@@ -9,16 +9,14 @@ nav{
     border-bottom: solid 1px transparent;
     border-bottom-color: $bg-color-light2;
     display: block;
-    section{
-        display: block;
-        box-sizing: border-box;
-        box-sizing: border-box;
-        padding: 0 20px;
-        height: 100%;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 1020px;
-    }
+    // section{
+    //     display: block;
+    //     box-sizing: border-box;
+    //     padding: 0 0 20px;
+    //     height: 100%;
+    //     margin: 0 auto;
+    //     width: 100%;
+    // }
     a.brand{
         position: relative;
         top: 15px;
@@ -158,45 +156,6 @@ nav{
     	transition: all 0.3s ease;
     }
 
-
-
-
-
-    /*@media screen and (max-height: 26.375em){
-
-     	.menu-panel {
-     		font-size: 90%;
-     		width: 190px;
-     	}
-
-     	.menu-left,
-     	.menu-push-toleft {
-     		left: -190px;
-     	}
-
-     	.menu-right {
-     		right: -190px;
-     	}
-    }*/
-
-
- /*Desktop Navigation List
-     .nav-list{
-     display: none;
-     float: right;
-     margin-top: 22px;
-     margin-bottom: 0;
-     padding-left: 0;
-     list-style: none;
-     li{
-         display: inline;
-         float: left;
-         font-family: 'Open Sans', sans-serif;
-         font-size: 14px;
-         margin-left: 40px;
-         }
-     }*/
-
 /* Mobile first queries */
 
     /* Larger than tablet */
@@ -250,7 +209,7 @@ nav{
         nav{
             height: 100px;
             position: fixed;
-            top: 100px;
+            top: 0;
             a.brand{
                 position: relative;
                 top: 24px;
