@@ -9,14 +9,6 @@ nav{
     border-bottom: solid 1px transparent;
     border-bottom-color: $bg-color-light2;
     display: block;
-    // section{
-    //     display: block;
-    //     box-sizing: border-box;
-    //     padding: 0 0 20px;
-    //     height: 100%;
-    //     margin: 0 auto;
-    //     width: 100%;
-    // }
     a.brand{
         position: relative;
         top: 15px;
@@ -35,6 +27,7 @@ nav{
         }
     }
 }
+
 
     // Mobile hamburger styles
     .mobile-menu{
@@ -128,6 +121,16 @@ nav{
         .nav-link:active {
         	background: darken($bg-color-dark, 12%);
         }
+        .nav-login {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            & a {
+                transition: background-color 200ms ease-in-out;
+                font-size: 14px;
+                padding: 0 14px;
+            }
+        }
     }
 
 
@@ -171,7 +174,7 @@ nav{
                 height: 45px;
             }
             li.nav-item{
-                margin-left: 30px;
+                margin-left: 12px;
                 float: left;
                 &:first-child a {
                     margin-top: 0;
@@ -196,6 +199,18 @@ nav{
                 .nav-link:active {
                     background: transparent;
                     color: darken($bg-color-dark, 7%);
+                }
+                .nav-login {
+                    position: relative;
+                    top: 4px;
+                    right: 0px;
+                    margin-left: 24px;
+                    & a {
+                        transition: background-color 200ms ease-in-out;
+                        font-size: 14px;
+                        padding: 0 14px;
+                        color: $color-light;
+                    }
                 }
             }
             .hide-right{
